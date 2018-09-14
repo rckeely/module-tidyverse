@@ -1,3 +1,6 @@
+% Introduction to the Tidyverse
+% Nandan Rao
+
 ## What is the Tidyverse
 
 The tidyverse is a collection of libraries for R, created by the same people, with a unified vision.
