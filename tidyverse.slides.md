@@ -66,7 +66,7 @@ Just like a list, subsetting is done with `[]`:
 
 ## Dataframe
 
-And columns are access with `$` or `[[]]`, which returns a vector:
+And columns are accessed with `$` or `[[]]`, which returns a vector:
 
 ```{R}
 > iris$Species
@@ -120,7 +120,7 @@ It's nicer to work with tibbles.
 
 ## Loading Data
 
-Reading csv's can be done with:
+Reading csv's can be done in base R with:
 
 ```{R}
 read.csv('path/to/myfile.csv')
@@ -422,3 +422,5 @@ spread() goes from "long" to "wide."
 In tidy format, each column is a variable and each variable only belongs to one column.
 
 This is a very important concept!
+
+---
