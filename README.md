@@ -69,7 +69,7 @@ Just like a list, subsetting is done with `[]`:
 
 ## Dataframe
 
-And columns are access with `$` or `[[]]`, which returns a vector:
+And columns are accessed with `$` or `[[]]`, which returns a vector:
 
 ```{R}
 > iris$Species
@@ -123,7 +123,7 @@ It's nicer to work with tibbles.
 
 ## Loading Data
 
-Reading csv's can be done with:
+Reading csv's can be done in base R with:
 
 ```{R}
 read.csv('path/to/myfile.csv')
@@ -249,9 +249,7 @@ As the name suggests, we've created a big tibble which "nested" the small tibble
 
 ## nest()
 
-Let's take a look at the first tibble.
-
-We use the `$` to access the column, which will return a list of all the small tibbles.
+Let's use the `$` to access the column, which will return a list of all the small tibbles.
 
 We then use `[[1]]` to extract the first element of the list.
 
@@ -347,7 +345,7 @@ n()
 
 ## Summarizing
 
-n() is simple: it returns the number of rows of a dataframe (group)
+n() returns the number of rows of a dataframe (group)
 ```{R}
 dat %>%
     group_by(NAICS) %>%
@@ -361,7 +359,7 @@ dat %>%
   <int>
 1    56
 ```
-Note that summarize() requires all arguments to be named: the name becomes the column of the returned dataframe row.
+Note that summarize() requires all arguments to be named!
 
 ---
 
@@ -425,3 +423,10 @@ spread() goes from "long" to "wide."
 In tidy format, each column is a variable and each variable only belongs to one column.
 
 This is a very important concept!
+
+---
+## Reading about tidy data
+
+Hadley Wickham gives a great discussion on tidy data:
+
+<http://r4ds.had.co.nz/tidy.html>
